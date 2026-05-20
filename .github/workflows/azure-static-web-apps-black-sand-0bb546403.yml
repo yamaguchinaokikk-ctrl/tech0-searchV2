@@ -16,6 +16,8 @@ jobs:
     name: Build and Deploy Job
     steps:
       - uses: actions/checkout@v3
+        env:
+          NEXT_PUBLIC_API_URL: https://tech0-search-api-gussan-ckb8dbase0gdhadd.southeastasia-01.azurewebsites.net
         with:
           submodules: true
           lfs: false
